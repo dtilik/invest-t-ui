@@ -50,18 +50,50 @@ module.exports = {
         },
         // Trading-specific colors
         profit: {
-          DEFAULT: "#22c55e", // Green
-          muted: "#86efac",
+          DEFAULT: "#10b981", // Emerald 500 - more refined green
+          muted: "#a7f3d0", // Emerald 200
         },
         loss: {
-          DEFAULT: "#ef4444", // Red
-          muted: "#fca5a5",
+          DEFAULT: "#ef4444", // Red 500
+          muted: "#fca5a5", // Red 200
+        },
+        // Neutral slate/gray/zinc palette additions
+        slate: {
+          50: "#f8fafc",
+          100: "#f1f5f9",
+          200: "#e2e8f0",
+          300: "#cbd5e1",
+          400: "#94a3b8",
+          500: "#64748b",
+          600: "#475569",
+          700: "#334155",
+          800: "#1e293b",
+          900: "#0f172a",
+          950: "#020617",
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "var(--radius-lg)",
+        md: "var(--radius-md)",
+        sm: "var(--radius-sm)",
+        DEFAULT: "var(--radius)",
+      },
+      boxShadow: {
+        sm: "var(--shadow-sm)",
+        DEFAULT: "var(--shadow)",
+        md: "var(--shadow-md)",
+        lg: "var(--shadow-lg)",
+      },
+      fontWeight: {
+        light: '300',
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+      },
+      spacing: {
+        '4.5': '1.125rem',
+        '18': '4.5rem',
       },
       keyframes: {
         "accordion-down": {
